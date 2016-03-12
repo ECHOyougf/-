@@ -13,7 +13,7 @@ var wordStore = [
 ];
 var asker = document.getElementById("asker");
 var answer = document.getElementById("answer");
-asker.onkeyup = function () {
+asker.onblur=asker.onkeyup = function () {
   var txt = asker.value;
   if (txt) {
     for (var i = 0; i < wordStore.length; i++) {
