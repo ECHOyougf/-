@@ -10,6 +10,17 @@ var wordStore = [
   {"哎": "一切都会好起来的"},
   {"哈": "哈哈"},
   {"爱": "嗯。我爱你"},
+  {"饭": "我今天吃了鸡腿"},
+  {"人": "其实我一直觉得人是很奇怪的东西。"},
+  {"梦": "哦。我不会做梦"},
+  {"开心": "要一直保持好心情呐。"},
+  {"失恋": "亲爱的，向前看，大踏步向前走"},
+  {"岁": "嗯...我现在只有3岁。"},
+  {"吃": "我喜欢吃鸡腿。"},
+  {"他": "我真想知道他是谁。"},
+  {"小正": "嗯，你说"},
+  {"我": "感觉你是个很可爱善良的人呐"},
+  {"啊": "好羡慕你们有喜怒哀乐啊"},
 ];
 var asker = document.getElementById("asker");
 var answer = document.getElementById("answer");
@@ -32,4 +43,7 @@ asker.onblur=asker.onkeyup = function () {
   } else {
     answer.innerHTML = "";
   }
+}
+window.onload=function(){
+  asker.focus();
 }
